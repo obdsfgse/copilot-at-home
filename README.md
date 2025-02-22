@@ -7,6 +7,7 @@ Reference documentation : https://tabby.tabbyml.com/docs/welcome/
 ```mermaid
   flowchart TD
     D@{ shape: procs, label: "Developers IDE's"}
+    E@{ shape: procs, label: "Developers WebBrowsers"}
     subgraph tabby[tabby server]
       subgraph docker
         tabby-container
@@ -15,7 +16,8 @@ Reference documentation : https://tabby.tabbyml.com/docs/welcome/
     end
     tabby-container -.-> |pulls models| hugging-face
     docker -->|uses| GPU
-    D --> |Code completion & Chat| tabby
+    D --> |Integrated Code completion| tabby
+    E --> |Chat in authenticated UI| tabby
 ```
 
 Works best if you have a GPU for the server. 
