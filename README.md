@@ -48,5 +48,8 @@ Have devellopers register themselves to the following link, http://[tabby host]:
 
 Install a compatible addon for your IDE, example : https://marketplace.visualstudio.com/items?itemName=TabbyML.vscode-tabby
 
+Add your authentication token from the web UI.
+
+Code!
 
 
