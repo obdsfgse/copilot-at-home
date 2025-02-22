@@ -64,6 +64,7 @@ Install a compatible addon for your IDE, example : https://marketplace.visualstu
 Add your authentication token from the web UI.
 
 Code!
+
 ![image](https://github.com/user-attachments/assets/06531de3-05c7-425f-b684-2bb7c4659ef3)
 
 
