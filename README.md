@@ -1,5 +1,20 @@
 # copilot-at-home
-Instructions to install self hosted code assistant for your IDE
+Instructions to install self hosted code assistant for your IDEs
+Reference documentation : https://tabby.tabbyml.com/docs/welcome/
+
+```mermaid
+  flowchart TD
+    D@{ shape: procs, label: "Developers IDE's"}
+    subgraph tabby[tabby server]
+      subgraph docker
+        tabby-container
+      end
+      GPU
+    end
+    tabby-container -.-> |pulls models| hugging-face
+    docker -->|uses| GPU
+    D --> |Code completion & Chat| tabby
+```
 
 Works best if you have a GPU for the server. 
 The tabby server can be installed anywhere in you organisation.
@@ -35,8 +50,6 @@ sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```
 ### Install Tabby Server
-
-Reference documentation : https://tabby.tabbyml.com/docs/welcome/
 
 Clone this repository on the server, or add the docker-compose.yaml file 
 
