@@ -1,5 +1,7 @@
 # copilot-at-home
-Instructions to install self hosted code assistant for your IDEs
+
+Instructions to install self hosted, private code assistant for your IDEs
+
 Reference documentation : https://tabby.tabbyml.com/docs/welcome/
 
 ```mermaid
